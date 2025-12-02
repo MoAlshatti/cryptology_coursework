@@ -32,7 +32,7 @@ def BSGS(p: int, g: int, h: int, ell: int) -> int:
     return solution
 
 #print("Answer: ", BSGS(107,4,83,53))
-print("Answer: ", BSGS(133736723,2,125783745,133736722)) # 29991398
+#print("Answer: ", BSGS(133736723,2,125783745,133736722)) # 29991398
 #print("Answer: ", BSGS(240000000000889,119888251341522,122044725852430,10000000000037))
     
 

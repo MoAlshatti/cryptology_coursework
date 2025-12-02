@@ -7,7 +7,7 @@ def pohlig_hellman(p: int, g: int, h: int)->int:
         print("The input is not doable, terminating...")
         return -1
 
-    print("The prime factors are: ", facs)
+    #print("The prime factors are: ", facs)
     bits = []
     #f is factor, e is exponent
     for f,e in facs:
@@ -44,7 +44,7 @@ def pohlig_hellman(p: int, g: int, h: int)->int:
         facList.append(num)
     #lets rename the list of a's too
     A = bits
-    print("Applying Sun Tzu's theorem...")
+    #print("Applying Sun Tzu's theorem...")
     #Now apply the chinese remainder theorem
     mTotal = 1
     for fac in facList:
@@ -79,12 +79,12 @@ def testing_ph():
         
 #testing_ph()
 
-print("Answer: ",pohlig_hellman(10192004369, 3 , 7198247104)) 
+#print("Answer: ",pohlig_hellman(10192004369, 3 , 7198247104)) 
 #print("Answer: ",pohlig_hellman(14400000337,5,9370058779)) # 7921731534 
 #print("Answer: ",pohlig_hellman(4238338164061,6,3689495385185)) # 2430808064962 1.3 minutes
 #print("Answer: ",pohlig_hellman(102092514301,10,30246603389)) # 55166371790  17.4 seconds
 #print("Answer: ",pohlig_hellman(641617368221,2,472374485029)) # 610027025421 1.3 seconds
 #print("Answer: ",pohlig_hellman(12600001177,17,11240688171)) # 9876543210  8.03 minutes
-print("===============================")
+#print("===============================")
 #print("Answer: ",pohlig_hellman(21600000503, 5, 15151854931))
 #print("===============================")
