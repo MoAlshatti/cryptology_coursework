@@ -2,7 +2,7 @@ def pohlig_hellman(p: int, g: int, h: int)->int:
     MAX_PRIME_DIVISOR = 20000000000 
     order = p-1
     facs = (order).factor()
-    B = max(MAX_PRIME_DIVISOR,floor((2/3) * p))
+    B = min(MAX_PRIME_DIVISOR,floor((2/3) * p))
     if facs[-1][0] >= B:
         print("The input is not doable, terminating...")
         return -1
