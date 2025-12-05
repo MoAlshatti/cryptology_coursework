@@ -1,5 +1,5 @@
 load("eg_sign.sage")
-load("algorithms/pohlig_hellman.sage")
+load("../algorithms/pohlig_hellman.sage")
 
 m = 555
 r,sig = oracle(m)

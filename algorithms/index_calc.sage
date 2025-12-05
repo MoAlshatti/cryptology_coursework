@@ -53,7 +53,7 @@ def IC(p: int, g: int, h: int)->int:
     return ZZ(sol)
 
 # This function repeats running index calclus in case it fails, until success
-def recursive_IC(p: int, g: int, h: int):
+def recursive_IC(p: int, g: int, h: int)-> int:
     while (res := IC(p,g,h)) == -1:
         continue
     return res

@@ -33,9 +33,11 @@ def IC(p: int, g: int, h: int)->int:
         if y == _sage_const_1 :
             relations.append(k)
             exponents.append(factors)
+
     relations = vector(Integers(order),relations)
     exponents = matrix(Integers(order),exponents)
     solved_logs = exponents.solve_right(relations)
+
     exponents = [] 
     while True:
         factors = []
@@ -57,7 +59,7 @@ def IC(p: int, g: int, h: int)->int:
     return ZZ(sol)
 
 # This function repeats running index calclus in case it fails, until success
-def recursive_IC(p: int, g: int, h: int):
+def recursive_IC(p: int, g: int, h: int)-> int:
     while (res := IC(p,g,h)) == -_sage_const_1 :
         continue
     return res

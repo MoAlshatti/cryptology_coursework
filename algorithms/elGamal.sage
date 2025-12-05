@@ -13,7 +13,7 @@ p,g = setup()
 def gen_signer_key() -> tuple[int,int]:
     # the reason the choice of d does not start from 1 or end with p-1 is to avoid
     #trivial brute force attempts that begin from the start or end
-    d = randint(10^8,p-10^8)
+    d = randint(10^7,p-10^7)
     pK = power_mod(g,d,p)
     return d, pK
     

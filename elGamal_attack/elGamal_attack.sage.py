@@ -5,7 +5,7 @@ from sage.all_cmdline import *   # import sage library
 
 _sage_const_555 = Integer(555); _sage_const_1 = Integer(1)
 load("eg_sign.sage")
-load("algorithms/pohlig_hellman.sage")
+load("../algorithms/pohlig_hellman.sage")
 
 m = _sage_const_555 
 r,sig = oracle(m)

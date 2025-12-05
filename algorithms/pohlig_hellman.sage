@@ -7,7 +7,6 @@ def pohlig_hellman(p: int, g: int, h: int)->int:
         print("The input is not doable, terminating...")
         return -1
 
-    #print("The prime factors are: ", facs)
     bits = []
     #f is factor, e is exponent
     for f,e in facs:
@@ -44,7 +43,6 @@ def pohlig_hellman(p: int, g: int, h: int)->int:
         facList.append(num)
     #lets rename the list of a's too
     A = bits
-    #print("Applying Sun Tzu's theorem...")
     #Now apply the chinese remainder theorem
     mTotal = 1
     for fac in facList:
